@@ -113,6 +113,15 @@ active or not.
 In this example I have two devices: the first one is my Amazfit Bip S watch,
 the second one is my Xiaomi Mi Smart Scale.
 
+When argument is `--gps`, that will download the following two files:
+* cep_7days.zip
+* cep_alm_pak.zip\
+From the cep_alm_pak.zip you unzip cep_pak.bin and gps_alm.bin and flash into the watch.
+
+You can also do the same with the huami-token python script wrapped into python GUI kivi and packaged for Android as the Huafetcher https://codeberg.org/vanous/huafetcher .
+
+It downloads and unzips the cep_pak.bin and gps_alm.bin into /storage/emulated/0.
+
 ## Experimental: updates download
 
 This is extremely dangerous: flashing the wrong version can brick your device!
